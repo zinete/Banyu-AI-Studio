@@ -1,3 +1,4 @@
+import {chromePath} from './browser-runtime.mjs';
 // Real browser + real local models. Run from repository root with server running.
 // node scripts/benchmark.mjs --seconds 1800
 import {chromium} from '../frontend/node_modules/playwright-core/index.mjs';
@@ -8,12 +9,12 @@ const exec=promisify(execFile);
 const secondsIndex=process.argv.indexOf('--seconds');
 const duration=secondsIndex<0?1800:Number(process.argv[secondsIndex+1]);
 if(!Number.isFinite(duration)||duration<1)throw Error('Invalid duration');
-const browser=await chromium.launch({executablePath:'C:/Program Files/Google/Chrome/Application/chrome.exe',headless:true,args:['--autoplay-policy=no-user-gesture-required']});
+const browser=await chromium.launch({executablePath:chromePath(),headless:true,args:['--autoplay-policy=no-user-gesture-required']});
 const context=await browser.newContext({viewport:{width:1440,height:1000}});
 const outbound=[];await context.route('**/*',route=>{const url=new URL(route.request().url());if(!['127.0.0.1','localhost'].includes(url.hostname)){outbound.push(url.origin);return route.abort();}return route.continue();});
 const page=await context.newPage();const errors=[];page.on('pageerror',e=>errors.push(String(e)));
 fs.mkdirSync('docs/verification',{recursive:true});
-const report={duration_requested:duration,started:new Date().toISOString(),gpu:[],items:[],fps:[],external_browser_requests:outbound,errors};
+const report={platform:process.platform,gpu_metric:process.platform==='darwin'?'unavailable (Apple unified memory)':'nvidia-smi',duration_requested:duration,started:new Date().toISOString(),gpu:[],items:[],fps:[],external_browser_requests:outbound,errors};
 const post=(path,body)=>page.evaluate(async({path,body})=>{const r=await fetch(path,{method:'POST',headers:{'X-Studio':'1','Content-Type':'application/json'},body:body?JSON.stringify(body):undefined});const value=await r.json();if(!r.ok)throw Error(JSON.stringify(value));return value;},{path,body});
 const getState=()=>page.evaluate(async()=>await(await fetch('/api/state')).json());
 try{
@@ -34,7 +35,7 @@ try{
   while(Date.now()<deadline){
    await page.waitForTimeout(1000);
    const state=await getState();item=state.items.find(x=>x.id===id);
-   try{const {stdout}=await exec('C:/Windows/System32/nvidia-smi.exe',['--query-gpu=name,memory.used,memory.total','--format=csv,noheader,nounits']);report.gpu.push({at:new Date().toISOString(),value:stdout.trim()});}catch{}
+   try{if(process.platform==='darwin')throw Error('NVIDIA metrics unavailable on Apple Silicon');const {stdout}=await exec('nvidia-smi',['--query-gpu=name,memory.used,memory.total','--format=csv,noheader,nounits']);report.gpu.push({at:new Date().toISOString(),value:stdout.trim()});}catch{}
    if(state.stopped)throw Error('Unexpected paused state');
    if(item&&['done','review','refused','cancelled'].includes(item.status))break;
   }

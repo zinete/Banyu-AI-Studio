@@ -1,6 +1,7 @@
+import {chromePath} from './browser-runtime.mjs';
 import { chromium } from '../frontend/node_modules/playwright-core/index.mjs';
 import fs from 'node:fs';
-const browser=await chromium.launch({executablePath:'C:/Program Files/Google/Chrome/Application/chrome.exe',headless:true,args:['--autoplay-policy=no-user-gesture-required']});
+const browser=await chromium.launch({executablePath:chromePath(),headless:true,args:['--autoplay-policy=no-user-gesture-required']});
 const context=await browser.newContext({viewport:{width:1440,height:1000}});
 const page=await context.newPage();
 const errors=[];page.on('pageerror',e=>errors.push(String(e)));page.on('console',m=>{if(m.type()==='error')errors.push(m.text());});

@@ -1,6 +1,7 @@
+import {chromePath} from './browser-runtime.mjs';
 import {chromium} from '../frontend/node_modules/playwright-core/index.mjs';
 import fs from 'node:fs';
-const browser=await chromium.launch({executablePath:'C:/Program Files/Google/Chrome/Application/chrome.exe',headless:true,args:['--autoplay-policy=no-user-gesture-required']});
+const browser=await chromium.launch({executablePath:chromePath(),headless:true,args:['--autoplay-policy=no-user-gesture-required']});
 const page=await browser.newPage({viewport:{width:1440,height:1000}});
 const checks=[];
 const post=(path,body)=>page.evaluate(async({path,body})=>{const r=await fetch(path,{method:'POST',headers:{'X-Studio':'1','Content-Type':'application/json'},body:body?JSON.stringify(body):undefined});return{status:r.status,body:await r.json()};},{path,body});

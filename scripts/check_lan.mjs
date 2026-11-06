@@ -1,8 +1,9 @@
+import {chromePath} from './browser-runtime.mjs';
 import {chromium} from '../frontend/node_modules/playwright-core/index.mjs';
 import fs from 'node:fs';
 const config=JSON.parse(fs.readFileSync('.runtime/lan.json','utf8'));
 const base=`http://${config.host}:8765`;
-const browser=await chromium.launch({executablePath:'C:/Program Files/Google/Chrome/Application/chrome.exe',headless:true});
+const browser=await chromium.launch({executablePath:chromePath(),headless:true});
 const context=await browser.newContext();
 const page=await context.newPage();
 const errors=[];page.on('pageerror',error=>errors.push(String(error)));

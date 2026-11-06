@@ -6,7 +6,7 @@
 
 ## 在这台电脑运行
 
-双击 **Start-Studio.cmd**，浏览器访问 **http://127.0.0.1:8765**。
+Windows 双击 **Start-Studio.cmd**；M 系列 Mac 运行 `bash Start-Studio-macOS.sh`。浏览器访问 **http://127.0.0.1:8765**。
 
 1. 在角色预览中点击「启用声音与角色」。浏览器需要一次点击才能播放声音。
 2. 点击「恢复回答」。默认启动时始终暂停。
@@ -18,7 +18,16 @@
 
 ## 首次安装或迁移
 
-需要 Windows、Node.js 22+、Python 3.12。首次准备需要联网，运行阶段不请求云服务。
+支持 Windows 和 Apple Silicon macOS 14+，需要 Node.js 22+、Python 3.12。首次准备需要联网，运行阶段不请求云服务。Mac 完整步骤及验证范围见 [macOS 安装说明](docs/MACOS.md)。
+
+Mac 已安装原生 Ollama、Python 3.12、Node.js 和语音系统库后：
+
+```bash
+bash Setup-macOS.sh
+bash Start-Studio-macOS.sh
+```
+
+Windows：
 
 ```powershell
 ./Setup.ps1

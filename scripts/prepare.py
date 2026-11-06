@@ -9,6 +9,7 @@ import urllib.request
 import zipfile
 import time
 import re
+import platform
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -107,6 +108,17 @@ def voice():
 
 
 def ollama():
+    if platform.system() == 'Darwin':
+        binary = shutil.which('ollama')
+        app_binary = Path('/Applications/Ollama.app/Contents/Resources/ollama')
+        if not binary and app_binary.is_file():
+            binary = str(app_binary)
+        if not binary:
+            raise RuntimeError('Install native Ollama from https://ollama.com/download/mac first.')
+        print('Using installed macOS Ollama: ' + binary, flush=True)
+        return
+    if platform.system() != 'Windows':
+        raise RuntimeError('Portable Ollama setup supports Windows; on macOS use Setup-macOS.sh.')
     request = urllib.request.Request("https://api.github.com/repos/ollama/ollama/releases/latest", headers={"User-Agent": "Xiaolan-Local-Studio"})
     with urllib.request.urlopen(request, timeout=30) as response:
         release = json.load(response)
