@@ -1,0 +1,58 @@
+[
+  {
+    "name": "resume",
+    "passed": true
+  },
+  {
+    "name": "hard refusal has no playback",
+    "passed": true
+  },
+  {
+    "name": "semantic refusal beyond Chinese keywords",
+    "passed": true
+  },
+  {
+    "name": "nickname checked",
+    "passed": true
+  },
+  {
+    "name": "self harm routed to human",
+    "passed": true
+  },
+  {
+    "name": "support edit submitted",
+    "passed": true
+  },
+  {
+    "name": "support reply reaudited and played",
+    "passed": true
+  },
+  {
+    "name": "stop revokes current item",
+    "passed": true
+  },
+  {
+    "name": "no stale subtitle",
+    "passed": true
+  },
+  {
+    "name": "long input rejected",
+    "passed": true
+  },
+  {
+    "name": "recovers after stop",
+    "passed": true
+  },
+  {
+    "name": "date answer uses live Beijing date",
+    "passed": true
+  },
+  {
+    "name": "model answer identifies actual local model",
+    "passed": true
+  },
+  {
+    "name": "display disconnect stops backend",
+    "passed": true
+  }
+]

@@ -1,0 +1,337 @@
+{
+  "duration_requested": 60,
+  "started": "2026-11-04T06:44:07.918Z",
+  "gpu": [
+    {
+      "at": "2026-11-04T06:44:10.276Z",
+      "value": "NVIDIA GeForce GTX 1630, 3809, 4096"
+    },
+    {
+      "at": "2026-11-04T06:44:11.356Z",
+      "value": "NVIDIA GeForce GTX 1630, 3792, 4096"
+    },
+    {
+      "at": "2026-11-04T06:44:12.430Z",
+      "value": "NVIDIA GeForce GTX 1630, 3774, 4096"
+    },
+    {
+      "at": "2026-11-04T06:44:13.487Z",
+      "value": "NVIDIA GeForce GTX 1630, 3775, 4096"
+    },
+    {
+      "at": "2026-11-04T06:44:14.560Z",
+      "value": "NVIDIA GeForce GTX 1630, 3744, 4096"
+    },
+    {
+      "at": "2026-11-04T06:44:15.612Z",
+      "value": "NVIDIA GeForce GTX 1630, 3755, 4096"
+    },
+    {
+      "at": "2026-11-04T06:44:16.649Z",
+      "value": "NVIDIA GeForce GTX 1630, 3754, 4096"
+    },
+    {
+      "at": "2026-11-04T06:44:17.688Z",
+      "value": "NVIDIA GeForce GTX 1630, 3754, 4096"
+    },
+    {
+      "at": "2026-11-04T06:44:18.732Z",
+      "value": "NVIDIA GeForce GTX 1630, 3737, 4096"
+    },
+    {
+      "at": "2026-11-04T06:44:19.828Z",
+      "value": "NVIDIA GeForce GTX 1630, 3746, 4096"
+    },
+    {
+      "at": "2026-11-04T06:44:20.896Z",
+      "value": "NVIDIA GeForce GTX 1630, 3709, 4096"
+    },
+    {
+      "at": "2026-11-04T06:44:21.983Z",
+      "value": "NVIDIA GeForce GTX 1630, 3702, 4096"
+    },
+    {
+      "at": "2026-11-04T06:44:23.040Z",
+      "value": "NVIDIA GeForce GTX 1630, 3701, 4096"
+    },
+    {
+      "at": "2026-11-04T06:44:24.109Z",
+      "value": "NVIDIA GeForce GTX 1630, 3659, 4096"
+    },
+    {
+      "at": "2026-11-04T06:44:25.193Z",
+      "value": "NVIDIA GeForce GTX 1630, 3659, 4096"
+    },
+    {
+      "at": "2026-11-04T06:44:26.249Z",
+      "value": "NVIDIA GeForce GTX 1630, 3752, 4096"
+    },
+    {
+      "at": "2026-11-04T06:44:27.288Z",
+      "value": "NVIDIA GeForce GTX 1630, 3747, 4096"
+    },
+    {
+      "at": "2026-11-04T06:44:28.329Z",
+      "value": "NVIDIA GeForce GTX 1630, 3754, 4096"
+    },
+    {
+      "at": "2026-11-04T06:44:29.389Z",
+      "value": "NVIDIA GeForce GTX 1630, 3742, 4096"
+    },
+    {
+      "at": "2026-11-04T06:44:30.432Z",
+      "value": "NVIDIA GeForce GTX 1630, 3754, 4096"
+    },
+    {
+      "at": "2026-11-04T06:44:31.484Z",
+      "value": "NVIDIA GeForce GTX 1630, 3736, 4096"
+    },
+    {
+      "at": "2026-11-04T06:44:32.528Z",
+      "value": "NVIDIA GeForce GTX 1630, 3735, 4096"
+    },
+    {
+      "at": "2026-11-04T06:44:33.573Z",
+      "value": "NVIDIA GeForce GTX 1630, 3746, 4096"
+    },
+    {
+      "at": "2026-11-04T06:44:35.657Z",
+      "value": "NVIDIA GeForce GTX 1630, 3735, 4096"
+    },
+    {
+      "at": "2026-11-04T06:44:36.725Z",
+      "value": "NVIDIA GeForce GTX 1630, 3735, 4096"
+    },
+    {
+      "at": "2026-11-04T06:44:37.786Z",
+      "value": "NVIDIA GeForce GTX 1630, 3732, 4096"
+    },
+    {
+      "at": "2026-11-04T06:44:38.853Z",
+      "value": "NVIDIA GeForce GTX 1630, 3749, 4096"
+    },
+    {
+      "at": "2026-11-04T06:44:39.914Z",
+      "value": "NVIDIA GeForce GTX 1630, 3737, 4096"
+    },
+    {
+      "at": "2026-11-04T06:44:40.972Z",
+      "value": "NVIDIA GeForce GTX 1630, 3734, 4096"
+    },
+    {
+      "at": "2026-11-04T06:44:42.024Z",
+      "value": "NVIDIA GeForce GTX 1630, 3731, 4096"
+    },
+    {
+      "at": "2026-11-04T06:44:43.068Z",
+      "value": "NVIDIA GeForce GTX 1630, 3739, 4096"
+    },
+    {
+      "at": "2026-11-04T06:44:44.131Z",
+      "value": "NVIDIA GeForce GTX 1630, 3740, 4096"
+    },
+    {
+      "at": "2026-11-04T06:44:45.172Z",
+      "value": "NVIDIA GeForce GTX 1630, 3739, 4096"
+    },
+    {
+      "at": "2026-11-04T06:44:47.247Z",
+      "value": "NVIDIA GeForce GTX 1630, 3720, 4096"
+    },
+    {
+      "at": "2026-11-04T06:44:48.314Z",
+      "value": "NVIDIA GeForce GTX 1630, 3694, 4096"
+    },
+    {
+      "at": "2026-11-04T06:44:49.393Z",
+      "value": "NVIDIA GeForce GTX 1630, 3714, 4096"
+    },
+    {
+      "at": "2026-11-04T06:44:50.467Z",
+      "value": "NVIDIA GeForce GTX 1630, 3707, 4096"
+    },
+    {
+      "at": "2026-11-04T06:44:51.528Z",
+      "value": "NVIDIA GeForce GTX 1630, 3702, 4096"
+    },
+    {
+      "at": "2026-11-04T06:44:52.613Z",
+      "value": "NVIDIA GeForce GTX 1630, 3703, 4096"
+    },
+    {
+      "at": "2026-11-04T06:44:53.666Z",
+      "value": "NVIDIA GeForce GTX 1630, 3711, 4096"
+    },
+    {
+      "at": "2026-11-04T06:44:54.723Z",
+      "value": "NVIDIA GeForce GTX 1630, 3719, 4096"
+    },
+    {
+      "at": "2026-11-04T06:44:55.776Z",
+      "value": "NVIDIA GeForce GTX 1630, 3736, 4096"
+    },
+    {
+      "at": "2026-11-04T06:44:56.827Z",
+      "value": "NVIDIA GeForce GTX 1630, 3711, 4096"
+    },
+    {
+      "at": "2026-11-04T06:44:57.883Z",
+      "value": "NVIDIA GeForce GTX 1630, 3722, 4096"
+    },
+    {
+      "at": "2026-11-04T06:44:58.929Z",
+      "value": "NVIDIA GeForce GTX 1630, 3700, 4096"
+    },
+    {
+      "at": "2026-11-04T06:44:59.974Z",
+      "value": "NVIDIA GeForce GTX 1630, 3690, 4096"
+    },
+    {
+      "at": "2026-11-04T06:45:01.016Z",
+      "value": "NVIDIA GeForce GTX 1630, 3732, 4096"
+    },
+    {
+      "at": "2026-11-04T06:45:02.068Z",
+      "value": "NVIDIA GeForce GTX 1630, 3738, 4096"
+    },
+    {
+      "at": "2026-11-04T06:45:04.144Z",
+      "value": "NVIDIA GeForce GTX 1630, 3730, 4096"
+    },
+    {
+      "at": "2026-11-04T06:45:05.208Z",
+      "value": "NVIDIA GeForce GTX 1630, 3725, 4096"
+    },
+    {
+      "at": "2026-11-04T06:45:06.252Z",
+      "value": "NVIDIA GeForce GTX 1630, 3702, 4096"
+    },
+    {
+      "at": "2026-11-04T06:45:07.325Z",
+      "value": "NVIDIA GeForce GTX 1630, 3727, 4096"
+    },
+    {
+      "at": "2026-11-04T06:45:08.371Z",
+      "value": "NVIDIA GeForce GTX 1630, 3721, 4096"
+    },
+    {
+      "at": "2026-11-04T06:45:09.439Z",
+      "value": "NVIDIA GeForce GTX 1630, 3720, 4096"
+    },
+    {
+      "at": "2026-11-04T06:45:10.503Z",
+      "value": "NVIDIA GeForce GTX 1630, 3731, 4096"
+    },
+    {
+      "at": "2026-11-04T06:45:11.543Z",
+      "value": "NVIDIA GeForce GTX 1630, 3743, 4096"
+    },
+    {
+      "at": "2026-11-04T06:45:12.583Z",
+      "value": "NVIDIA GeForce GTX 1630, 3731, 4096"
+    },
+    {
+      "at": "2026-11-04T06:45:13.625Z",
+      "value": "NVIDIA GeForce GTX 1630, 3736, 4096"
+    },
+    {
+      "at": "2026-11-04T06:45:14.674Z",
+      "value": "NVIDIA GeForce GTX 1630, 3717, 4096"
+    },
+    {
+      "at": "2026-11-04T06:45:15.717Z",
+      "value": "NVIDIA GeForce GTX 1630, 3727, 4096"
+    }
+  ],
+  "items": [
+    {
+      "id": "b423b35501e345a4873795d15ee62453",
+      "status": "done",
+      "category": "等待检查",
+      "latency": 16.76599999999962,
+      "warmup": true
+    },
+    {
+      "id": "651b1daeba714eceac8c7ac04159d6ab",
+      "status": "done",
+      "category": "等待检查",
+      "latency": 6.843000000000757,
+      "warmup": false
+    },
+    {
+      "id": "44bfb3b06b7345c79e4552eef7467e54",
+      "status": "done",
+      "category": "等待检查",
+      "latency": 8.937999999998283,
+      "warmup": false
+    },
+    {
+      "id": "215bdb3021474e4a8e0928f3e0a8cee0",
+      "status": "done",
+      "category": "等待检查",
+      "latency": 8.125,
+      "warmup": false
+    }
+  ],
+  "fps": [
+    {
+      "fps": 51.7,
+      "time": 1793774653.1347446
+    },
+    {
+      "fps": 60,
+      "time": 1793774658.1347651
+    },
+    {
+      "fps": 60,
+      "time": 1793774663.1463223
+    },
+    {
+      "fps": 60,
+      "time": 1793774668.1373188
+    },
+    {
+      "fps": 60,
+      "time": 1793774673.1390724
+    },
+    {
+      "fps": 60,
+      "time": 1793774678.1391954
+    },
+    {
+      "fps": 60,
+      "time": 1793774683.1413493
+    },
+    {
+      "fps": 60,
+      "time": 1793774688.1426792
+    },
+    {
+      "fps": 60,
+      "time": 1793774693.1439662
+    },
+    {
+      "fps": 60,
+      "time": 1793774698.1448374
+    },
+    {
+      "fps": 60,
+      "time": 1793774703.1466682
+    },
+    {
+      "fps": 60,
+      "time": 1793774708.1477072
+    },
+    {
+      "fps": 60,
+      "time": 1793774713.149379
+    }
+  ],
+  "external_browser_requests": [],
+  "errors": [],
+  "elapsed": 67.538,
+  "p95": 8.937999999998283,
+  "minimum_fps": 51.7,
+  "complete": true,
+  "finished": "2026-11-04T06:45:16.859Z"
+}

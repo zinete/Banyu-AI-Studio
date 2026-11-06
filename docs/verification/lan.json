@@ -1,0 +1,17 @@
+{
+  "anonymous_blocked": true,
+  "token_removed_from_url": true,
+  "authenticated_state": 200,
+  "lan_websocket": true,
+  "audio_context": "function",
+  "health": {
+    "llm": "ready",
+    "voice": "ready",
+    "avatar": true,
+    "avatar_kind": "yier_bubu_3d",
+    "local_only": false,
+    "lan_enabled": true,
+    "offline_inference": true
+  },
+  "errors": []
+}

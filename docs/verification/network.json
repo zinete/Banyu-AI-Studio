@@ -1,0 +1,69 @@
+{
+  "time": 1793776662.9482524,
+  "connections": [
+    {
+      "pid": 4368,
+      "name": "ollama.exe",
+      "remote": [
+        "127.0.0.1",
+        52933
+      ],
+      "external": false
+    },
+    {
+      "pid": 25844,
+      "name": "python.exe",
+      "remote": [
+        "127.0.0.1",
+        51347
+      ],
+      "external": false
+    },
+    {
+      "pid": 25844,
+      "name": "python.exe",
+      "remote": [
+        "127.0.0.1",
+        57019
+      ],
+      "external": false
+    },
+    {
+      "pid": 25844,
+      "name": "python.exe",
+      "remote": [
+        "127.0.0.1",
+        51348
+      ],
+      "external": false
+    },
+    {
+      "pid": 25844,
+      "name": "python.exe",
+      "remote": [
+        "127.0.0.1",
+        64747
+      ],
+      "external": false
+    },
+    {
+      "pid": 25844,
+      "name": "python.exe",
+      "remote": [
+        "127.0.0.1",
+        11435
+      ],
+      "external": false
+    },
+    {
+      "pid": 25844,
+      "name": "python.exe",
+      "remote": [
+        "127.0.0.1",
+        61040
+      ],
+      "external": false
+    }
+  ],
+  "external": []
+}

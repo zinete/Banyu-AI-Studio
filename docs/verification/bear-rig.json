@@ -1,0 +1,9 @@
+{
+  "mouth_follows_audio": true,
+  "bubu_does_not_lipsync": true,
+  "wave": true,
+  "smile": true,
+  "confused": true,
+  "stop_freezes_pose": true,
+  "reduced_motion": true
+}

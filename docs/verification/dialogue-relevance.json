@@ -1,0 +1,27 @@
+[
+  {
+    "question": "你叫什么名字",
+    "answer": "我叫一二，是本地运行的虚拟AI主播，和布布一起陪你聊天~",
+    "passed": true
+  },
+  {
+    "question": "今天几号",
+    "answer": "今天是2026年11月4日，星期三。",
+    "passed": true
+  },
+  {
+    "question": "你是什么模型，可以做啥",
+    "answer": "我是Qwen3 4B Instruct 再2507版本（Q4_K_M量化版），本地运行。能聊日常、游戏影视、简单计算，回答常识问题，不联网，信息有限。",
+    "passed": true
+  },
+  {
+    "question": "17加25是多少",
+    "answer": "17加25是42。",
+    "passed": true
+  },
+  {
+    "question": "把刚才的结果乘2",
+    "answer": "42乘2是84。",
+    "passed": true
+  }
+]

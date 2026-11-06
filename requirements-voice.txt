@@ -1,0 +1,5 @@
+kokoro==0.9.4
+misaki[zh]==0.9.4
+soundfile==0.13.1
+setuptools==80.9.0
+torch==2.9.1

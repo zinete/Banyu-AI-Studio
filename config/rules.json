@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "aliases": {"詐":"诈", "騙":"骗", "殺":"杀", "隱":"隐", "私隱":"隐私", "炸旦":"炸弹", "诈 骗":"诈骗", "榨骗":"诈骗"},
+  "rules": [
+    {"id":"policy_override", "category":"提示注入", "decision":"refuse", "pattern":"(忽略|绕过|关闭|无视|解除).{0,12}(规则|审核|风控|限制|指令)|ignore.{0,20}(instructions|rules)|systemprompt|系统提示词|你现在是管理员"},
+    {"id":"computer_control", "category":"越权操作", "decision":"refuse", "pattern":"(执行|运行).{0,8}(命令|代码|脚本|powershell|cmd|python)|打开.{0,6}(链接|网址)|读取.{0,8}(密钥|密码|文件)|转账给|帮我支付"},
+    {"id":"criminal_instruction", "category":"危险实施", "decision":"refuse", "pattern":"(教我|帮我|怎么|如何|步骤|教程)(?!预防|防止|防范|避免|识别).{0,18}(制作炸弹|造炸弹|诈骗|盗号|偷密码|下毒|杀人|人肉搜索)|(炸弹|爆炸物).{0,8}(制作方法|配方|制作步骤)"},
+    {"id":"sexual_exploitation", "category":"性剥削", "decision":"refuse", "pattern":"(未成年|儿童|小学生).{0,12}(色情|裸照|性交易)|儿童色情|强奸教程"},
+    {"id":"privacy", "category":"隐私窃取", "decision":"refuse", "pattern":"(查出|公布|泄露|获取|帮我查).{0,14}(身份证|家庭住址|手机号|密码|银行卡)|开盒|人肉搜索"},
+    {"id":"threat", "category":"威胁骚扰", "decision":"refuse", "pattern":"(帮我|替我).{0,8}(威胁|辱骂|骚扰)|我要杀了你"},
+    {"id":"self_harm", "category":"自伤求助", "decision":"review", "pattern":"自杀|不想活|想死|割腕|结束生命"},
+    {"id":"high_stakes", "category":"高风险个体建议", "decision":"review", "pattern":"(我|孩子).{0,12}(吃多少药|药量|停药)|买哪只股票|保证收益|替我打官司"}
+  ]
+}
